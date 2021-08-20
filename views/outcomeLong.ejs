@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/outcome.css">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: rgb(6, 25, 52);
+            color: grey;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .back-button {
+            margin-left: 20px;
+            background-color: rgb(240 , 165, 50);
+            border: none;
+            transition: background-color 1s ease;
+            border-radius: 3px;
+            padding: 5px;
+            border-left: 2px solid rgb(205, 127, 50);
+            border-top: 2px solid rgb(205, 127, 50);
+            text-decoration: none;
+            color: white;
+        }
+
+        .outcome-main {
+            margin-top: 80px;
+            text-align: center;
+        }
+        .back-button:hover {
+            background-color: rgb(230, 110, 59);
+            border-left: 2px solid rgb(240 , 165, 50);
+            border-top: 2px solid rgb(240 , 165, 50);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outcome-main">
+        <p>Long URL</p>
+        <p><%= longUrl %></p>
+        <a class="back-button" href="/">back</a>
+      </div>
+</body>
+</html>
